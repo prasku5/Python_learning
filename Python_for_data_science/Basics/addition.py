@@ -12,3 +12,9 @@ print(3/2)
 
 # Floor division of two numbers [It does floor operation]
 print(3//2)
+
+# Empty string
+print('')
+
+# Length of empty String
+print(len(''))
