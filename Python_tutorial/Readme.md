@@ -1,29 +1,51 @@
-Order of sequence
+# Python Learning Repository 🐍
 
-⌨️ Basics
+**Author:** Prasanna Kumar
 
-⌨️ Lists
+This repository covers fundamental and intermediate Python topics, providing a structured learning path for Python enthusiasts. Each section focuses on a specific aspect of Python programming.
 
-⌨️ Tuples
+## Table of Contents
 
-⌨️ Dictionaries
+1. **Basics** 🖥️
+   - Introduction to Python and basic concepts.
+  
+2. **Lists** 📋
+   - Understanding lists and their usage in Python.
 
-⌨️ Sets
+3. **Tuples** 📦
+   - Exploring tuples and their characteristics.
 
-⌨️ Strings
+4. **Dictionaries** 🗃️
+   - Understanding dictionaries and their applications.
+  
+5. **Sets** 🧮
+   - An introduction to sets in Python and their usage.
 
-⌨️ Collections
+6. **Strings** 📝
+   - Manipulating and working with strings in Python.
 
-⌨️ Itertools
+7. **Collections** 🗂️
+   - Overview of Python's collection modules (e.g., `collections`).
 
-⌨️ Lambda Functions
+8. **Itertools** 🔁
+   - Understanding the `itertools` module for efficient iteration.
 
-⌨️ Exceptions and Errors
+9. **Lambda Functions** 💼
+   - Introduction to lambda functions for functional programming.
 
-⌨️ Logging
+10. **Exceptions and Errors** ❌
+   - Handling exceptions and errors in Python.
 
-⌨️ JSON
+11. **Logging** 📜
+   - Utilizing the logging module for effective logging practices.
 
-⌨️ Random Numbers
+12. **JSON** 🧾
+   - Working with JSON data in Python.
 
-⌨️ Decorators
+13. **Random Numbers** 🎲
+   - Generating random numbers in Python.
+
+14. **Decorators** 🎨
+   - Understanding and using decorators in Python.
+
+Feel free to explore each topic in detail, and don't hesitate to contribute or provide feedback. Happy learning in the Python world!
