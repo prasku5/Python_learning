@@ -49,3 +49,9 @@ This repository covers fundamental and intermediate Python topics, providing a s
    - Understanding and using decorators in Python.
 
 Feel free to explore each topic in detail, and don't hesitate to contribute or provide feedback. Happy learning in the Python world!
+
+
+## OOPS Concepts:
+
+![Oops concepts](Oops_concepts.png)
+
