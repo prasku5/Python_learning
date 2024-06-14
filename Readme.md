@@ -75,6 +75,47 @@ Feel free to explore each topic in detail, and don't hesitate to contribute or p
 - DTOs
 - Decorators
 
+## Use cases
+
+## Principles:
+
+### SRP (Single Responsibility Principle)
+- **Use Case**: Ensuring each data pipeline component handles only one aspect of data processing, like data cleaning or data transformation, to simplify maintenance and improve readability.
+
+### OCP (Open/Closed Principle)
+- **Use Case**: Designing data processing modules that can be extended with new data formats or processing algorithms without modifying existing code, facilitating easier upgrades and enhancements.
+
+### LSP (Liskov Substitution Principle)
+- **Use Case**: Using interchangeable components for data storage (like SQL databases and NoSQL databases) that can be swapped without altering the overall system behavior.
+
+### DIP (Dependency Inversion Principle)
+- **Use Case**: Decoupling data processing logic from specific data storage implementations by relying on abstractions, enabling easier changes to storage solutions without affecting the processing logic.
+
+### DI (Dependency Injection)
+- **Use Case**: Injecting database connections or data source configurations into data processing classes to enhance testability and reduce hard dependencies on specific implementations.
+
+## Patterns:
+
+### Factory Pattern
+- **Use Case**: Creating different data parser objects (like CSVParser, JSONParser) dynamically at runtime based on the input data type, without changing the core data ingestion logic.
+
+### Singleton Pattern
+- **Use Case**: Ensuring a single instance of a database connection pool or a configuration manager is used throughout a data application to manage resources efficiently.
+
+### Repository Pattern
+- **Use Case**: Abstracting data access logic in a data warehouse or data lake, allowing business logic to interact with data storage in a uniform way, regardless of the underlying storage technology.
+
+## Additional Concepts:
+
+### Object Composition
+- **Use Case**: Building complex data processing workflows by composing simple, reusable data transformation objects, promoting code reuse and flexibility.
+
+### DTOs (Data Transfer Objects)
+- **Use Case**: Using DTOs to transfer data between different layers of a data application (like between the data access layer and the business logic layer) to ensure a clean separation of concerns.
+
+### Decorators
+- **Use Case**: Adding functionalities such as logging, data validation, or caching to data processing functions dynamically without modifying their core logic.
+
 
 ![Oops concepts](Oops_concepts.png)
 
