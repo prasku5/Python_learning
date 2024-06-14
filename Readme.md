@@ -73,7 +73,7 @@ This repository contains Jupyter notebooks covering various Object-Oriented Prog
 ## Principles
 
 ### Single Responsibility Principle (SRP)
-- **Notebook**: [Single_Responsibility_Principle.ipynb](Python_oops_concepts/Single_Responsibility_Principle.ipynb)
+- **Notebook**: [Single_Responsibility_Principle.ipynb](/Python_oops_concept/Single_Responsibility_Principle.ipynb)
 - **Description**: This principle states that a class should have only one reason to change, meaning that a class should only have one job or responsibility.
 
 ### Open/Closed Principle (OCP)
