@@ -50,19 +50,34 @@ This repository covers fundamental and intermediate Python topics, providing a s
 
 Feel free to explore each topic in detail, and don't hesitate to contribute or provide feedback. Happy learning in the Python world!
 
-
-Principles:
-SRP, OCP, LSP, DIP, DI
-Patterns:
-Factory Pattern, Singleton Pattern, Repository Pattern
-Encapsulation:
-Private, Protected, Public Attributes
-Core OOP Concepts:
-Abstraction, Inheritance, Polymorphism, Object Composition
-Additional Concepts:
-DTOs, Decorators
-
 ## OOPS Concepts:
+
+## Principles:
+- SRP
+- OCP
+- LSP
+- DIP
+- DI
+
+## Patterns:
+- Factory Pattern
+- Singleton Pattern
+- Repository Pattern
+
+## Encapsulation:
+- Private Attributes
+- Protected Attributes
+- Public Attributes
+
+## Core OOP Concepts:
+- Abstraction
+- Inheritance
+- Polymorphism
+- Object Composition
+
+## Additional Concepts:
+- DTOs
+- Decorators
 
 ![Oops concepts](Oops_concepts.png)
 
@@ -106,6 +121,9 @@ This repository contains Jupyter notebooks covering various Object-Oriented Prog
 - **Notebook**: [Repository_Pattern.ipynb](/Python_oops_concept/Repository_Pattern.ipynb)
 - **Description**: The Repository pattern mediates between the domain and data mapping layers, acting like an in-memory domain object collection.
 
+
+## Core OOP Concepts
+
 ## Encapsulation
 
 ### Encapsulation (Private Attribute)
@@ -119,8 +137,6 @@ This repository contains Jupyter notebooks covering various Object-Oriented Prog
 ### Encapsulation (Public Attribute)
 - **Notebook**: [Encapsulation_public_attribute.ipynb](/Python_oops_concept/Encapsulation_public_attribute.ipynb)
 - **Description**: Encapsulation using public attributes allows unrestricted access to the attribute.
-
-## Core OOP Concepts
 
 ### Abstraction
 - **Notebook**: [Abstraction.ipynb](/Python_oops_concept/Abstraction.ipynb)
