@@ -52,28 +52,24 @@ Feel free to explore each topic in detail, and don't hesitate to contribute or p
 
 ## OOPS Concepts:
 
+## Core OOP Concepts:
+- Encapsulation
+- Abstraction
+- Inheritance
+- Polymorphism
+- Object Composition
+
 ## Principles:
-- SRP
-- OCP
-- LSP
-- DIP
-- DI
+- SRP (Single Responsibility Principle)
+- OCP (Open/Closed Principle)
+- LSP (Liskov Substitution Principle)
+- DIP (Dependency Inversion Principle)
+- DI (Dependency Injection)
 
 ## Patterns:
 - Factory Pattern
 - Singleton Pattern
 - Repository Pattern
-
-## Encapsulation:
-- Private Attributes
-- Protected Attributes
-- Public Attributes
-
-## Core OOP Concepts:
-- Abstraction
-- Inheritance
-- Polymorphism
-- Object Composition
 
 ## Additional Concepts:
 - DTOs
