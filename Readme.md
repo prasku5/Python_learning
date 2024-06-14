@@ -57,7 +57,6 @@ Feel free to explore each topic in detail, and don't hesitate to contribute or p
 - Abstraction
 - Inheritance
 - Polymorphism
-- Object Composition
 
 ## Principles:
 - SRP (Single Responsibility Principle)
@@ -72,8 +71,10 @@ Feel free to explore each topic in detail, and don't hesitate to contribute or p
 - Repository Pattern
 
 ## Additional Concepts:
+- Object Composition
 - DTOs
 - Decorators
+
 
 ![Oops concepts](Oops_concepts.png)
 
@@ -146,11 +147,12 @@ This repository contains Jupyter notebooks covering various Object-Oriented Prog
 - **Notebook**: [Polymorphism.ipynb](/Python_oops_concept/Polymorphism.ipynb)
 - **Description**: Polymorphism allows objects of different classes to be treated as objects of a common superclass, typically using methods to perform different tasks based on the object’s class.
 
+
+## Additional Concepts
+
 ### Object Composition
 - **Notebook**: [Object_Composition.ipynb](/Python_oops_concept/Object_Composition.ipynb)
 - **Description**: Object Composition is a design principle where objects are composed of other objects to achieve functionality.
-
-## Additional Concepts
 
 ### Data Transfer Objects (DTOs)
 - **Notebook**: [Data_Transfer_Objects_(DTOs).ipynb](/Python_oops_concept/Data_Transfer_Objects_(DTOs).ipynb)
