@@ -1,1 +1,8 @@
 /spark_env
+/.pytest_cache
+/.vscode
+/.ipynb_checkpoints
+/.idea
+/.gitignore
+/.git
+/.vscode
