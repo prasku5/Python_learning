@@ -1,0 +1,5 @@
+2024-08-05 11:44:59,156 - example_logger - DEBUG - This is a debug message
+2024-08-05 11:44:59,156 - example_logger - INFO - This is an info message
+2024-08-05 11:44:59,158 - example_logger - WARNING - This is a warning message
+2024-08-05 11:44:59,160 - example_logger - ERROR - This is an error message
+2024-08-05 11:44:59,161 - example_logger - CRITICAL - This is a critical message
