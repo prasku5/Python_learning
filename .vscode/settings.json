@@ -1,4 +1,7 @@
 {
     "maven.terminal.useJavaHome": true,
-    "java.jdt.ls.java.home": "/usr/local/opt/openjdk/libexec/openjdk.jdk/Contents/Home"
+    "java.jdt.ls.java.home": "/usr/local/opt/openjdk/libexec/openjdk.jdk/Contents/Home",
+    "notebook.defaultFormatter": "GitHub.copilot",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.defaultFoldingRangeProvider": "GitHub.copilot"
 }
