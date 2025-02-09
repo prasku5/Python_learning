@@ -30,63 +30,8 @@ Python lists (also called arrays) come with several useful methods for manipulat
 | `all()`            | Returns `True` if all elements in the list are `True`.                                                         | No parameters.                                | `lst = [1, 2, 3]`<br>`result = all(lst)`<br>Result: `result = True`<br>`lst = [0, 2, 3]`<br>`result = all(lst)`<br>Result: `result = False` |
 | `zip()`            | Combines multiple iterables into one, element by element.                                                      | `iterable1, iterable2, ...` — Multiple iterables to combine. | `lst1 = [1, 2, 3]`<br>`lst2 = ['a', 'b', 'c']`<br>`zipped = list(zip(lst1, lst2))`<br>Result: `zipped = [(1, 'a'), (2, 'b'), (3, 'c')]`                                   |
 
----
 
-## Tips & Techniques for Solving Array Problems 💡
-
-### 1. **Understand the Problem First** 🧐
-- Carefully read the problem, identify inputs and outputs, and plan your approach.
-- Break down the problem into smaller, manageable steps.
-
-### 2. **Choose the Right Data Structure** 🏗️
-- Use lists for ordered collections, sets for unique items, and dictionaries for fast lookups.
-
-### 3. **Use List Comprehensions** ✂️
-- Create concise, readable code for transforming or filtering lists.
-    ```python
-    [x**2 for x in range(10)]  # Generates a list of squares
-    ```
-
-### 4. **Use Built-in Functions** 🔧
-- Take advantage of Python's powerful array functions like `append()`, `pop()`, `sort()`, etc.
-    ```python
-    my_list.append(5)  # Adds 5 to the list
-    my_list.sort()     # Sorts the list
-    ```
-
-### 5. **Handle Edge Cases** ⚠️
-- Account for edge cases like empty lists or out-of-bound indices before performing operations.
-    ```python
-    if my_list:  # Checks if the list is not empty
-        print(my_list[0])
-    ```
-
-### 6. **Avoid Modifying Lists While Iterating** 🚫
-- Modifying a list while iterating can cause unexpected behavior. Use a copy if needed.
-    ```python
-    for item in my_list.copy():
-        # Perform operations
-    ```
-
-### 7. **Use Two Pointers/Sliding Window** 🔄
-- For problems involving subarrays or pairs, use two pointers to reduce time complexity.
-
-### 8. **Apply Binary Search** 🔍
-- Use binary search for sorted arrays to improve performance (O(log n)).
-    ```python
-    from bisect import bisect_left
-    bisect_left(my_list, 5)  # Finds the position of 5
-    ```
-
-### 9. **Optimize for Space Complexity** 💾
-- Modify lists in-place instead of creating additional copies to save memory.
-
-### 10. **Use Dictionary for Fast Lookup** 📖
-- Use dictionaries or sets to reduce lookup time (O(1)).
-    ```python
-    my_dict[element] = my_dict.get(element, 0) + 1
-    ```
-
+## Do's
 ---
 - **Start with Brute Force**: Start with a simple brute force solution to understand the problem better, then optimize it.
 - **Two Pointers**: Efficiently solve problems involving pairs, subarrays, or sliding windows.
@@ -139,8 +84,8 @@ Python lists (also called arrays) come with several useful methods for manipulat
 - **Use collections.deque for Sliding Window**: deque is perfect for efficiently adding and removing elements in sliding window problems.
 - **Use bisect Module for Binary Search**: For problems involving sorted arrays, the bisect module provides functions for efficient insertion and searching.
 
-# Don'ts :warning:
-
+## Don'ts :warning:
+---
 - **Don't Use Nested Loops Without Thinking**: Avoid unnecessary nested loops, as they increase time complexity (e.g., O(n²)).
 - **Don't Ignore Edge Cases**: Always consider cases like empty arrays, arrays with a single element, or arrays with duplicate values.
 - **Don't Modify Arrays While Iterating**: Modifying an array while iterating can lead to unpredictable behavior.
@@ -154,77 +99,41 @@ Python lists (also called arrays) come with several useful methods for manipulat
 - **Don’t Use for i in range(len()) If You Don’t Need the Index**: If you only need the value, iterate directly over the elements.
 - **Don't Use == for List Comparison**: List comparison with == can be slow, especially with large lists. Use efficient comparison techniques.
 - **Don't Use Inefficient Search Algorithms**: Avoid linear searches in sorted arrays; use binary search instead for O(log n) time complexity.
-- **Don’t Use Sort When Not Needed**: Avoid sorting when it’s not required for solving the problem.
-- **Don’t Overuse List Comprehensions**: Avoid overly complex list comprehensions as they reduce readability.
-- **Don’t Forget to Check for Constraints**: Always verify if the problem has specific constraints (e.g., array size or values).
-- **Don’t Ignore Negative Numbers**: Handle negative values correctly, especially when working with sums or ranges.
-- **Don’t Use Loops for Counting Occurrences**: Use collections.Counter or dictionaries for counting occurrences instead of manually iterating.
-- **Don’t Assume Arrays Are Sorted**: Always check if the array is sorted before applying sorting algorithms.
-- **Don’t Use while True Loops**: Unless explicitly needed, avoid infinite loops without conditions.
-- **Don’t Assume Input Will Always Be Valid**: Always validate inputs before processing them to avoid unexpected behavior.
-- **Don’t Overcomplicate Solutions**: Keep solutions simple and avoid convoluted logic when solving problems.
-- **Don’t Forget to Handle Large Inputs**: Test solutions with large arrays to ensure they work efficiently under time and space constraints.
-- **Don’t Ignore Floating Point Precision Issues**: Be cautious with floating-point numbers, especially when comparing them.
-- **Don’t Assume Simple Brute Force Is Always Bad**: Sometimes brute force is the only viable solution for small inputs.
-- **Don’t Forget to Test with Multiple Cases**: Test edge cases, large inputs, and small inputs to ensure robustness.
-- **Don’t Over-Optimize Too Early**: Don't jump into complex optimization techniques before first solving the problem correctly.
-- **Don’t Assume All Elements are Unique**: Consider the possibility of repeated elements and plan accordingly.
-- **Don’t Rely on del in Loops**: Using del inside loops can alter the iteration behavior in unexpected ways.
-- **Don’t Use Inefficient Data Structures**: Avoid using inefficient structures like lists when the problem requires dictionaries or sets.
-- **Don’t Ignore the Order of Operations**: Pay attention to the order in which operations are applied when solving problems.
-- **Don’t Overuse Recursion**: Deep recursion can lead to stack overflow errors, especially for large inputs.
-- **Don’t Forget about Memory Limits**: Always check whether your solution may exceed memory limits, especially for large arrays.
-- **Don’t Use Nested Loops for Pairing**: Use hashmaps or sets to reduce time complexity when pairing elements.
-- **Don’t Ignore Overflow Possibilities**: Watch out for potential overflow when working with large integers or sums.
-- **Don’t Skip Boundary Conditions**: Always check the first and last elements of an array before performing operations.
-- **Don’t Assume a Specific Data Structure Is Best**: Always consider the problem requirements before choosing a data structure.
-- **Don’t Forget to Handle Nulls/None**: Always handle cases where elements could be None or null, especially when processing input arrays.
-- **Don’t Use in for Large Lists**: Avoid using in for membership testing in large lists; use sets or dictionaries for O(1) lookups.
-- **Don’t Forget About Sorting Edge Cases**: When sorting, always ensure that all elements are properly handled.
-- **Don’t Overuse Global Variables**: Avoid using global variables to store temporary data unless necessary.
-- **Don’t Use Inefficient Sorting for Large Data**: Avoid using non-optimal sorting algorithms like bubble sort for large data sets.
-- **Don’t Skip Complexity Analysis**: Always perform a complexity analysis to understand the time and space trade-offs.
-- **Don’t Mix Types Without Checking**: Ensure consistent data types throughout the array to avoid errors.
-- **Don’t Overuse List.append()**: Repeatedly appending to lists can be inefficient for large datasets.
-- **Don’t Overcomplicate Problem Breakdown**: Don’t try to break down problems too early or in ways that complicate the solution unnecessarily.
-- **Don’t Forget to Optimize for Worst Case**: Always plan for the worst-case time complexity scenario.
-- **Don’t Use Recursion When Iteration Is More Efficient**: Recursive solutions can lead to stack overflow in certain cases; prefer iteration where possible.
-- **Don’t Use for When map() or filter() Is More Efficient**: Avoid using for loops for simple transformations or filtering.
-- **Don’t Forget Python-Specific Optimizations**: Take advantage of Python-specific data structures like defaultdict or Counter to optimize code.
----
-## Key Learnings & Best Practices ✔️
-
-- **Use Lists Wisely**: Lists are versatile and can be modified frequently.
-    ```python
-    my_list.append(4)
-    ```
-- **Avoid Unnecessary Complexity**: Keep your code simple and efficient.
-- **Iterate Correctly**: Use `for item in list:` instead of `for i in range(len(list)):` unless you need the index.
-    ```python
-    for item in my_list:  # Preferred
-    ```
-- **Handle Index Errors**: Ensure indices are within bounds before accessing elements.
-- **Use Built-in Functions**: Functions like `append()`, `sort()`, and `reverse()` can save time.
-- **Avoid Mutable Default Arguments**: They can lead to unexpected behavior.
-    ```python
-    def func(my_list=None):
-        if my_list is None:
-            my_list = []
-    ```
-
----
-
-## Common Mistakes to Avoid ⚠️
-
-- **Index Out of Range**: Always check if the index exists before accessing.
-    ```python
-    my_list = [1, 2]
-    print(my_list[2])  # This will raise an IndexError
-    ```
-- **Mutable Default Arguments**: Don't use mutable objects as function defaults.
-- **Incorrect Looping**: Avoid unnecessary use of `range(len(list))`.
-    ```python
-    for item in my_list:  # Correct
-    ```
-
+- **Don't Use Sort When Not Needed**: Avoid sorting when it’s not required for solving the problem.
+- **Don't Overuse List Comprehensions**: Avoid overly complex list comprehensions as they reduce readability.
+- **Don't Forget to Check for Constraints**: Always verify if the problem has specific constraints (e.g., array size or values).
+- **Don't Ignore Negative Numbers**: Handle negative values correctly, especially when working with sums or ranges.
+- **Don't Use Loops for Counting Occurrences**: Use collections.Counter or dictionaries for counting occurrences instead of manually iterating.
+- **Don't Assume Arrays Are Sorted**: Always check if the array is sorted before applying sorting algorithms.
+- **Don't Use while True Loops**: Unless explicitly needed, avoid infinite loops without conditions.
+- **Don't Assume Input Will Always Be Valid**: Always validate inputs before processing them to avoid unexpected behavior.
+- **Don't Overcomplicate Solutions**: Keep solutions simple and avoid convoluted logic when solving problems.
+- **Don't Forget to Handle Large Inputs**: Test solutions with large arrays to ensure they work efficiently under time and space constraints.
+- **Don't Ignore Floating Point Precision Issues**: Be cautious with floating-point numbers, especially when comparing them.
+- **Don't Assume Simple Brute Force Is Always Bad**: Sometimes brute force is the only viable solution for small inputs.
+- **Don't Forget to Test with Multiple Cases**: Test edge cases, large inputs, and small inputs to ensure robustness.
+- **Don't Over-Optimize Too Early**: Don't jump into complex optimization techniques before first solving the problem correctly.
+- **Don't Assume All Elements are Unique**: Consider the possibility of repeated elements and plan accordingly.
+- **Don't Rely on del in Loops**: Using del inside loops can alter the iteration behavior in unexpected ways.
+- **Don't Use Inefficient Data Structures**: Avoid using inefficient structures like lists when the problem requires dictionaries or sets.
+- **Don't Ignore the Order of Operations**: Pay attention to the order in which operations are applied when solving problems.
+- **Don't Overuse Recursion**: Deep recursion can lead to stack overflow errors, especially for large inputs.
+- **Don't Forget about Memory Limits**: Always check whether your solution may exceed memory limits, especially for large arrays.
+- **Don't Use Nested Loops for Pairing**: Use hashmaps or sets to reduce time complexity when pairing elements.
+- **Don't Ignore Overflow Possibilities**: Watch out for potential overflow when working with large integers or sums.
+- **Don't Skip Boundary Conditions**: Always check the first and last elements of an array before performing operations.
+- **Don't Assume a Specific Data Structure Is Best**: Always consider the problem requirements before choosing a data structure.
+- **Don't Forget to Handle Nulls/None**: Always handle cases where elements could be None or null, especially when processing input arrays.
+- **Don't Use in for Large Lists**: Avoid using in for membership testing in large lists; use sets or dictionaries for O(1) lookups.
+- **Don't Forget About Sorting Edge Cases**: When sorting, always ensure that all elements are properly handled.
+- **Don't Overuse Global Variables**: Avoid using global variables to store temporary data unless necessary.
+- **Don't Use Inefficient Sorting for Large Data**: Avoid using non-optimal sorting algorithms like bubble sort for large data sets.
+- **Don't Skip Complexity Analysis**: Always perform a complexity analysis to understand the time and space trade-offs.
+- **Don't Mix Types Without Checking**: Ensure consistent data types throughout the array to avoid errors.
+- **Don't Overuse List.append()**: Repeatedly appending to lists can be inefficient for large datasets.
+- **Don't Overcomplicate Problem Breakdown**: Don’t try to break down problems too early or in ways that complicate the solution unnecessarily.
+- **Don't Forget to Optimize for Worst Case**: Always plan for the worst-case time complexity scenario.
+- **Don't Use Recursion When Iteration Is More Efficient**: Recursive solutions can lead to stack overflow in certain cases; prefer iteration where possible.
+- **Don't Use for When map() or filter() Is More Efficient**: Avoid using for loops for simple transformations or filtering.
+- **Don't Forget Python-Specific Optimizations**: Take advantage of Python-specific data structures like defaultdict or Counter to optimize code.
 ---
