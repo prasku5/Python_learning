@@ -24,6 +24,30 @@ Author: Prasanna Kumar
 | `all()`                 | Returns `True` if all elements in the list are `True`.                                                         | No parameters.                               | `lst = [1, 2, 3]`<br>`result = all(lst)`<br>Result: `result = True`<br>`lst = [0, 2, 3]`<br>`result = all(lst)`<br>Result: `result = False` |
 | `zip()`                 | Combines multiple iterables into one, element by element.                                                      | `iterable1, iterable2, ...` — Multiple iterables to combine. | `lst1 = [1, 2, 3]`<br>`lst2 = ['a', 'b', 'c']`<br>`zipped = list(zip(lst1, lst2))`<br>Result: `zipped = [(1, 'a'), (2, 'b'), (3, 'c')]`                                     |
 
+## Techniques and Tips for Solving Python Array Problems
+
+| Technique/Tip                        | Description                                                                                         | Example/Usage                                      |
+|--------------------------------------|-----------------------------------------------------------------------------------------------------|---------------------------------------------------|
+| **1. Understand the Problem First**  | Read the problem carefully and identify the input and desired output. Plan your approach.           | Break down the problem into smaller steps.         |
+| **2. Choose the Right Data Structure** | Ensure you are using the right data structure for the task (list, tuple, set, etc.).                 | Use `set` for fast lookups, `list` for ordered collection. |
+| **3. Use List Comprehensions**       | Use list comprehensions for clean, concise code when transforming or filtering lists.                | `[x**2 for x in range(10)]`                        |
+| **4. Use Built-in Functions**        | Leverage Python’s built-in array functions (`append()`, `pop()`, `sort()`, etc.) for efficiency.      | `my_list.append(5)`, `my_list.sort()`              |
+| **5. Handle Edge Cases**             | Account for edge cases such as empty lists or out-of-bound indices before performing operations.     | `if my_list:` to check for an empty list.          |
+| **6. Avoid Modifying Lists While Iterating** | Modifying a list while iterating can cause unexpected behavior. Use a copy or index-based iteration. | `for item in my_list.copy():` or `for i in range(len(my_list)):` |
+| **7. Use Two Pointers/Sliding Window** | Use the two-pointer or sliding window technique for problems like subarray sums, pairs, etc.          | Iterate with two pointers to find a pair of elements that sum to a target. |
+| **8. Apply Binary Search**           | Use binary search for problems involving sorted arrays to improve performance (O(log n) time).       | Use `bisect_left()` from the `bisect` module for binary search. |
+| **9. Optimize for Space Complexity** | If memory is a concern, try to solve the problem in-place without creating additional copies of lists. | `my_list.sort()` to sort in-place.                 |
+| **10. Use Dictionary for Fast Lookup** | When checking for existence or counting items, use dictionaries or sets to reduce lookup time (O(1)). | `my_dict[element] = my_dict.get(element, 0) + 1`  |
+| **11. Practice Divide and Conquer**  | For more complex problems, break them into smaller subproblems (like merge sort or quicksort).        | Use merge sort or quicksort to efficiently sort large lists. |
+| **12. Avoid Nested Loops When Possible** | Try to reduce nested loops to improve time complexity, especially in problems involving large lists.   | Use dictionary or set operations to avoid O(n^2) solutions. |
+| **13. Use Python's `zip()` Function** | Use `zip()` to combine lists element-wise for problems that require pairing elements from two or more lists. | `for a, b in zip(list1, list2):` |
+| **14. Use List Slicing**             | For problems that require subsets of lists, use slicing for simplicity and readability.             | `my_list[start:end]` to get a sublist from index `start` to `end`. |
+| **15. Practice Recursion for Complex Problems** | Use recursion for problems that involve breaking down tasks repeatedly, like tree or graph traversal. | Use recursion for depth-first search (DFS) in trees/graphs. |
+| **16. Avoid Unnecessary Sorting**    | Only sort a list when it’s required by the problem to avoid extra time complexity.                   | Only sort if necessary, such as in problems where order is important. |
+| **17. Use itertools for Combinatorial Problems** | For problems involving combinations, permutations, or product, use `itertools`.                     | `import itertools; itertools.permutations(my_list)` |
+| **18. Test with Multiple Inputs**    | Test your solution with a variety of test cases (edge cases, large input) to ensure correctness.      | Test with an empty list, single element list, and large list sizes. |
+| **19. Consider Time Complexity**     | Always aim for solutions that are optimal in terms of time complexity, especially for large inputs.   | Choose an O(n) solution over O(n^2) when possible. |
+
 ## Key Learnings & Do's
 
 | Learning/Do's                       | Description                                                                                     | Example                                      |
