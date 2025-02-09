@@ -1,4 +1,4 @@
-**Arrays**
+<big>Arrays</big>
 
 **Methods**
 
