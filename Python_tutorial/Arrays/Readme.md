@@ -24,9 +24,6 @@ Author: Prasanna Kumar
 | `all()`                 | Returns `True` if all elements in the list are `True`.                                                         | No parameters.                               | `lst = [1, 2, 3]`<br>`result = all(lst)`<br>Result: `result = True`<br>`lst = [0, 2, 3]`<br>`result = all(lst)`<br>Result: `result = False` |
 | `zip()`                 | Combines multiple iterables into one, element by element.                                                      | `iterable1, iterable2, ...` — Multiple iterables to combine. | `lst1 = [1, 2, 3]`<br>`lst2 = ['a', 'b', 'c']`<br>`zipped = list(zip(lst1, lst2))`<br>Result: `zipped = [(1, 'a'), (2, 'b'), (3, 'c')]`                                     |
 
-
-# Python Lists (Arrays) - Key Learnings, Do's, Don'ts, and Common Mistakes
-
 ## Key Learnings & Do's
 
 | Learning/Do's                       | Description                                                                                     | Example                                      |
